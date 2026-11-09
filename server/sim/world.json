@@ -1,0 +1,610 @@
+{
+  "district": {
+    "name": "Northgate District",
+    "size_km": [
+      6.0,
+      6.0
+    ],
+    "sectors": {
+      "NW": {
+        "x": [
+          0.0,
+          3.0
+        ],
+        "y": [
+          3.0,
+          6.0
+        ]
+      },
+      "NE": {
+        "x": [
+          3.0,
+          6.0
+        ],
+        "y": [
+          3.0,
+          6.0
+        ]
+      },
+      "SW": {
+        "x": [
+          0.0,
+          3.0
+        ],
+        "y": [
+          0.0,
+          3.0
+        ]
+      },
+      "SE": {
+        "x": [
+          3.0,
+          6.0
+        ],
+        "y": [
+          0.0,
+          3.0
+        ]
+      }
+    },
+    "junctions": {
+      "J1": [
+        0.75,
+        5.0
+      ],
+      "J2": [
+        2.25,
+        5.0
+      ],
+      "J3": [
+        3.75,
+        5.0
+      ],
+      "J4": [
+        5.25,
+        5.0
+      ],
+      "J5": [
+        0.75,
+        3.0
+      ],
+      "J6": [
+        2.25,
+        3.0
+      ],
+      "J7": [
+        3.75,
+        3.0
+      ],
+      "J8": [
+        5.25,
+        3.0
+      ],
+      "J9": [
+        0.75,
+        1.0
+      ],
+      "J10": [
+        2.25,
+        1.0
+      ],
+      "J11": [
+        3.75,
+        1.0
+      ],
+      "J12": [
+        5.25,
+        1.0
+      ]
+    },
+    "landmarks": {
+      "market_street": [
+        3.6,
+        3.0
+      ],
+      "ring_road_j9": [
+        1.5,
+        1.0
+      ],
+      "hospital": [
+        2.1,
+        4.0
+      ],
+      "old_airfield": [
+        5.8,
+        3.2
+      ]
+    }
+  },
+  "zones": [
+    {
+      "id": "RED-AIRFIELD",
+      "kind": "red",
+      "rect": {
+        "x": [
+          5.6,
+          6.0
+        ],
+        "y": [
+          2.2,
+          4.2
+        ]
+      },
+      "rule": "no entry, no override"
+    },
+    {
+      "id": "NR-HOSPITAL",
+      "kind": "no_record",
+      "rect": {
+        "x": [
+          1.6,
+          2.6
+        ],
+        "y": [
+          3.6,
+          4.4
+        ]
+      },
+      "rule": "transit allowed, recording forced off"
+    },
+    {
+      "id": "VIP-TEMP",
+      "kind": "vip",
+      "rect": {
+        "x": [
+          0.0,
+          1.2
+        ],
+        "y": [
+          4.4,
+          6.0
+        ]
+      },
+      "rule": "no entry while active",
+      "active": false
+    }
+  ],
+  "docks": {
+    "P1": {
+      "kind": "pole",
+      "at": [
+        0.75,
+        5.0
+      ],
+      "slots": 1
+    },
+    "P2": {
+      "kind": "pole",
+      "at": [
+        2.25,
+        5.0
+      ],
+      "slots": 1
+    },
+    "P3": {
+      "kind": "pole",
+      "at": [
+        3.75,
+        5.0
+      ],
+      "slots": 1
+    },
+    "P4": {
+      "kind": "pole",
+      "at": [
+        5.25,
+        5.0
+      ],
+      "slots": 1
+    },
+    "P5": {
+      "kind": "pole",
+      "at": [
+        0.75,
+        3.0
+      ],
+      "slots": 1
+    },
+    "P6": {
+      "kind": "pole",
+      "at": [
+        2.25,
+        3.0
+      ],
+      "slots": 1
+    },
+    "P7": {
+      "kind": "pole",
+      "at": [
+        3.75,
+        3.0
+      ],
+      "slots": 1
+    },
+    "P8": {
+      "kind": "pole",
+      "at": [
+        5.25,
+        3.0
+      ],
+      "slots": 1
+    },
+    "P9": {
+      "kind": "pole",
+      "at": [
+        0.75,
+        1.0
+      ],
+      "slots": 1
+    },
+    "P10": {
+      "kind": "pole",
+      "at": [
+        2.25,
+        1.0
+      ],
+      "slots": 1
+    },
+    "P11": {
+      "kind": "pole",
+      "at": [
+        3.75,
+        1.0
+      ],
+      "slots": 1
+    },
+    "P12": {
+      "kind": "pole",
+      "at": [
+        5.25,
+        1.0
+      ],
+      "slots": 1
+    },
+    "HUB-A": {
+      "kind": "hub",
+      "at": [
+        3.0,
+        4.0
+      ],
+      "slots": 3
+    },
+    "HUB-B": {
+      "kind": "hub",
+      "at": [
+        3.0,
+        2.0
+      ],
+      "slots": 3
+    }
+  },
+  "drone_model": {
+    "max_flight_min": 54,
+    "cruise_km_per_min": 0.9,
+    "sprint_km_per_min": 1.2,
+    "launch_delay_min": 0.5,
+    "drain_pct_per_min": {
+      "patrol": 1.5,
+      "hover": 1.5,
+      "cruise": 1.8,
+      "track": 2.4,
+      "sprint": 3.0
+    },
+    "charge_pct_per_min": 3.0,
+    "charge_cap_pct": 100,
+    "reserve_pct": 25,
+    "ready_pct": 80,
+    "launch_gate_pct": {
+      "patrol": 80,
+      "incident": 50,
+      "track": 60,
+      "perimeter": 50,
+      "corridor": 60
+    },
+    "relief_trigger_pct": 48,
+    "track_relief_trigger_pct": 45,
+    "wind_limit_ms": 12,
+    "radius_km": 10
+  },
+  "fleet": {
+    "D-01": {
+      "home": "P1"
+    },
+    "D-02": {
+      "home": "P2"
+    },
+    "D-03": {
+      "home": "P3"
+    },
+    "D-04": {
+      "home": "P4"
+    },
+    "D-05": {
+      "home": "P5"
+    },
+    "D-06": {
+      "home": "P6",
+      "thermal": true
+    },
+    "D-07": {
+      "home": "P7"
+    },
+    "D-08": {
+      "home": "P8"
+    },
+    "D-09": {
+      "home": "P9"
+    },
+    "D-10": {
+      "home": "P10"
+    },
+    "D-11": {
+      "home": "P11"
+    },
+    "D-12": {
+      "home": "P12",
+      "thermal": true
+    },
+    "D-13": {
+      "home": "HUB-A"
+    },
+    "D-14": {
+      "home": "HUB-A"
+    }
+  },
+  "pilots": {
+    "kazum": {
+      "kind": "human",
+      "roles": [
+        "watch_commander",
+        "remote_pilot",
+        "field_officer"
+      ],
+      "max_drones": 4
+    },
+    "DP-1": {
+      "kind": "simulated",
+      "name": "Asha Menon (duty pilot, simulated)",
+      "max_drones": 4
+    },
+    "DP-2": {
+      "kind": "simulated",
+      "name": "Tom Okoye (duty pilot, simulated)",
+      "max_drones": 4
+    }
+  },
+  "policies": {
+    "ready_floor": 3,
+    "thermal_penalty_km": 0.75,
+    "slot_log_radius_km": 1.6,
+    "geofence_km": 0.6,
+    "safety_rtb_margin_pct": 2
+  },
+  "ground_units": {
+    "road_speed_km_per_min": 0.5
+  },
+  "city": {
+    "seed": "CITY-01",
+    "day": "Monday",
+    "start": "09:00",
+    "sim_min_per_s": 0.5,
+    "stations": {
+      "fire": {
+        "name": "Fire Station",
+        "at": [
+          0.45,
+          2.0
+        ],
+        "road": [
+          0.75,
+          2.0
+        ],
+        "vehicles": {
+          "fire_engine_1": "fire_engine",
+          "fire_engine_2": "fire_engine"
+        }
+      },
+      "hospital": {
+        "name": "Hospital",
+        "at": [
+          4.5,
+          5.3
+        ],
+        "road": [
+          4.5,
+          5.0
+        ],
+        "vehicles": {
+          "ambulance_1": "ambulance",
+          "ambulance_2": "ambulance"
+        }
+      },
+      "police": {
+        "name": "Police Station",
+        "at": [
+          3.0,
+          3.25
+        ],
+        "road": [
+          3.0,
+          3.0
+        ],
+        "vehicles": {
+          "police_car_1": "police_car",
+          "police_car_2": "police_car"
+        }
+      }
+    },
+    "scenes": {
+      "fire": [
+        {
+          "name": "Mill Lane shops",
+          "at": [
+            2.25,
+            2.0
+          ]
+        },
+        {
+          "name": "Market Street",
+          "at": [
+            4.5,
+            3.0
+          ]
+        },
+        {
+          "name": "South Depot",
+          "at": [
+            3.0,
+            1.0
+          ]
+        },
+        {
+          "name": "Northgate Flats",
+          "at": [
+            3.75,
+            4.0
+          ]
+        }
+      ],
+      "accident": [
+        {
+          "name": "Ring Road",
+          "at": [
+            1.5,
+            1.0
+          ]
+        },
+        {
+          "name": "East Avenue",
+          "at": [
+            5.25,
+            2.0
+          ]
+        },
+        {
+          "name": "North Road",
+          "at": [
+            3.0,
+            5.0
+          ]
+        },
+        {
+          "name": "Central Crossing",
+          "at": [
+            1.5,
+            3.0
+          ]
+        }
+      ]
+    },
+    "services": {
+      "fire": [
+        "fire_engine"
+      ],
+      "accident": [
+        "police_car"
+      ],
+      "injuries": [
+        "ambulance"
+      ]
+    },
+    "work_min": {
+      "fire_engine": {
+        "label": "Extinguishing",
+        "min": 20
+      },
+      "police_car": {
+        "label": "Clearing the road",
+        "min": 18
+      },
+      "ambulance": {
+        "label": "Treating patients",
+        "min": 16
+      }
+    },
+    "risk_chance": {
+      "fire": 0.5,
+      "accident": 0.25
+    },
+    "injury_chance": {
+      "accident": 0.7,
+      "fire": 0.3
+    },
+    "injuries_max": 3,
+    "flare_chance": 0.6,
+    "flare_delay_min": 3,
+    "stay_min": 15,
+    "decision_timeout_min": 12.5,
+    "transport_chance": 0.75,
+    "stabilise_min": 8,
+    "traffic_chance": 0.6,
+    "traffic_clear_min": 8,
+    "traffic_natural_clear_min": 20,
+    "traffic_sight_km": 0.4,
+    "traffic_stop_km": 0.15,
+    "escort_lead_km": 0.2,
+    "escort_handoff_km": 0.3,
+    "detect": {
+      "sense_km": 0.8,
+      "possible_pct": 40,
+      "confirm_pct": 85,
+      "fallback_min": 4,
+      "spot_step_km": 0.25,
+      "clear_km": 0.4
+    },
+    "feed_lines": 6,
+    "events_kept": 40,
+    "start_battery": [
+      100,
+      96,
+      92,
+      88,
+      84,
+      80
+    ],
+    "home_pct": 35,
+    "fleet_board_min": 60,
+    "fleet_log_min": 5,
+    "watch_min": 60,
+    "watch_max_min": 120,
+    "watch_km": 0.3,
+    "roam": [
+      [
+        "J1",
+        "J2",
+        "J6",
+        "J5"
+      ],
+      [
+        "J2",
+        "J3",
+        "J7",
+        "J6"
+      ],
+      [
+        "J3",
+        "J4",
+        "J8",
+        "J7"
+      ],
+      [
+        "J5",
+        "J6",
+        "J10",
+        "J9"
+      ],
+      [
+        "J6",
+        "J7",
+        "J11",
+        "J10"
+      ],
+      [
+        "J7",
+        "J8",
+        "J12",
+        "J11"
+      ]
+    ]
+  }
+}

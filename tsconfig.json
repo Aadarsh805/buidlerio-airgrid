@@ -2,6 +2,8 @@
   "extends": "@agent-native/core/tsconfig.base.json",
   "compilerOptions": {
     "ignoreDeprecations": "6.0",
+    "noUncheckedIndexedAccess": false,
+    "lib": ["ES2022", "DOM", "DOM.Iterable"],
     "rootDirs": [
       ".",
       "./.react-router/types"
